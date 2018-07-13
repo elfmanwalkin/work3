@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- SEO (search engine optimization) -->
+    <meta name="description" content="Junior Developer Mohammad Uddin">
+    <meta name="keywords" content="junior developer, web developer, front end developer, junior software engineer">
+    <meta name="author" content="Mohammad Uddin">
+    <!-- end SEO -->
+    <title>Mohammad Young Uddin | Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1><span class="highlight">Mohammad Uddin</span> | Junior Developer</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="example@email.com" for="email">
+          <button type="submit" class="btn" id="contactBtn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+          <h1>Contact Mohammad Uddin</h1>
+          <div class="dark">
+            <form action="contact.html" method="post" class="quote">
+              <fieldset>
+                <div class="padding">
+                  <legend><span class="number">1. </span>Your basic information</legend>
+                  <br>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" placeholder="firstname lastname">
+                </div>
+                <div class="padding">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="user_email" placeholder="example@email.com">
+                </div>
+                <div class="padding">
+                  <label for="address">Address:</label>
+                  <input type="text" id="address" name="user_address"placeholder="123 Main Street">
+                </div>
+                <div class="padding fix1">
+                  <label for="age">Age:</label>
+                  <input type="radio" id="18" value="18" name="user_age">
+                  <label for="18">18-25</label>
+                  <input type="radio" id="over_25" value="over_25" name="user_age">
+                  <label for="over_25">26-40</label>
+                  <input type="radio" id="41_plus" value="41_plus" name="user_age">
+                  <label for="40_plus">41+</label>
+                </div>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="user_message" placeholder="type message here"></textarea>
+              </fieldset>
+              <fieldset>
+                <div class="padding">
+                  <legend><span class="number">2. </span>Project Information</legend>
+                  <br>
+                  <label for="project_type">Project Type:</label>
+                  <select id="project_type" name="user_project">
+                    <optgroup label="Project Type">
+                      <option value="frontend_development">Web Development</option>
+                      <option value="moblie_development">Moblie App Development</option>
+                      <option value="javascript_development">JavaScript Development</option>
+                      <option value="software_engineering">Software Engineering</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </fieldset>
+              <div class="padding fixme">
+                <label>Have You Used our Service Before?</label>
+                <input type="checkbox" id="yes" value="yes" name="user_yes">
+                <label for="yes">yes</label>
+                <input type="checkbox" id="no" value="no" name="user_no">
+                <label for="no">no</label>
+              </div>
+              <button class="button_1" type="submit">Send</button>
+            </form>
+          </div>
+      </div>
+    </section>
+    <footer id="foot">
+      <p>Mohammad Uddin | Junior Developer | copyright &copy; 2018</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

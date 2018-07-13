@@ -1,0 +1,277 @@
+body {
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5; */
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: #f4f4f4;
+}
+
+/* global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* header */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #logo {
+  float: left;
+}
+
+header #logo h1{
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* showcase */
+#showcase {
+  min-height: 400px;
+  background: url(../img/placeimg_1000_1000_tech.jpg) no-repeat 0 -100px;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  font-weight:900;
+  text-shadow: 0px 0px 3px #000;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+#showcase p {
+  font-size: 16px;
+}
+
+/* newsletter */
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+  border-top: #e8491d 3px solid;
+  border-bottom: #e8491d 3px solid;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 18px;
+}
+
+#newsletter input[type="email"] {
+  padding: 5px;
+  height: 35px;
+  width: 250px;
+}
+
+/* skills */
+#skills {
+  margin-top: 20px;
+}
+
+#skills .skills_images {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#skills .skills_images img {
+  width: 90px;
+  height: auto;
+}
+
+/* sidebar--about.html */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+  padding-top: 40px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* main-col--about.html */
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background-color: #e6e6e6e6;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+  border-top: #35424a 3px solid;
+}
+
+  .quote input[type="email"],
+  .quote input[type="text"],
+  .quote textarea {
+    width: 100%;
+    
+  }
+/* media queries */
+@media (max-width: 768px) {
+  header #logo,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #skills .skills_images,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header .current a {
+    color: black
+  }
+
+  nav ul {
+    width: 100%;
+  }
+  nav ul li {
+    display: block;
+    border: 2px black solid;
+    background: orangered;
+    width: 100%;
+  }
+
+  aside#sidebar {
+    padding-bottom: 100px;
+    margin-top: -40px;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #newsletter button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .fixme {
+    padding-top: 10px;
+    display: flex;
+  }
+  
+  .quote input[type="checkbox"] {
+    width: 1.5rem;
+  }
+  form .fix1 {
+    display: flex;
+  }
+  .quote input[type="radio"] {
+    width: 1.5rem;
+  }
+}
+
+@media(min-width: 768px) {
+  .padding {
+    padding-top: .3rem;
+    padding-bottom: .3rem;;
+  }
+  .button_1 {
+    width: ;
+  }
+}
